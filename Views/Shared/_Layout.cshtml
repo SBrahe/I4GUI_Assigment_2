@@ -9,24 +9,24 @@
 <body>
     <div id="wrapper">
         <header>
-            <img src="~/forkknife.png" />
         </header>
-        <nav>
-            <ul>
-                <li> <a asp-controller="Home" asp-action="Index">HomePage</a></li>
-            </ul>
-        </nav>
+        <div class="topnav">
+            <a asp-area="Identity" asp-page="/Account/Register">Register</a>
+            <a asp-area="Identity" asp-page="/Account/Login">Login</a>
+            <a asp-controller="Home" asp-action="Index">HomePage</a>
+            <a asp-controller="Reception" asp-action="Index">Reception</a>
+            <a asp-controller="Restaurant" asp-action="Index">Restaurant</a>
+            <a asp-controller="Kitchen" asp-action="Index">Kitchen</a>
+           
+        </div>
+
         <div id="content">
 
             <main>
                 @RenderBody()
             </main>
-            </header>
-            <div class="container">
-                <main role="main" class="pb-3">
-                    @RenderBody()
-                </main>
-            </div>
+
+        </div>
 
             <footer class="border-top footer text-muted">
                 <div class="container">
@@ -38,5 +38,7 @@
             <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
             <script src="~/js/site.js" asp-append-version="true"></script>
             @RenderSection("Scripts", required: false)
+
+    </div>
 </body>
 </html>
