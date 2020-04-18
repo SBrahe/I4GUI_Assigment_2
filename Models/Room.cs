@@ -5,8 +5,10 @@ using System.Threading.Tasks;
 
 namespace I4GUI_Assigment_2.Models
 {
-    public class Adults
+    public class Room
     {
-        public string name;
+        public string RoomNumber;
+
+        public List<Guest> guestsInRoom;
     }
 }
