@@ -9,6 +9,9 @@ namespace I4GUI_Assigment_2.Models
     {
         public string RoomNumber;
 
-        public List<Guest> guestsInRoom;
+        public int NumberOfChildren;
+        public int NumberOfAdults;
+        
+        public List<BreakfastReservation> BreakfastDates;
     }
 }
