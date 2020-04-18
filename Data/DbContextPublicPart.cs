@@ -14,7 +14,6 @@ namespace I4GUI_Assigment_2.Data
 
         protected override void OnModelCreating(ModelBuilder modelbuilder)
         {
-
         }
     }
 }
