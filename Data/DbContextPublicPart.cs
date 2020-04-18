@@ -14,6 +14,14 @@ namespace I4GUI_Assigment_2.Data
 
         protected override void OnModelCreating(ModelBuilder modelbuilder)
         {
+            modelbuilder.Entity<Employee>()
+                .HasKey(s => s.employeeID);
+
+            modelbuilder.Entity<Guest>()
+                .HasKey(s => s.guestID);
+
+            modelbuilder.Entity<Room>()
+                .HasKey(s => s.RoomNumber);
         }
     }
 }
