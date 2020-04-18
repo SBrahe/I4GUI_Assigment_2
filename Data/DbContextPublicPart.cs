@@ -14,15 +14,6 @@ namespace I4GUI_Assigment_2.Data
 
         protected override void OnModelCreating(ModelBuilder modelbuilder)
         {
-            //Employees
-            modelbuilder.Entity<Employee>()
-                .has
-
-            //Guests
-            modelbuilder.Entity<Guest>()
-
-            //Rooms
-            modelbuilder.Entity<Room>()
 
         }
     }
