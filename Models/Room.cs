@@ -7,11 +7,11 @@ namespace I4GUI_Assigment_2.Models
 {
     public class Room
     {
-        public string RoomNumber;
+        public string RoomNumber { get; set; }
 
-        public int NumberOfChildren;
-        public int NumberOfAdults;
+        public int NumberOfChildren { get; set; }
+        public int NumberOfAdults { get; set; }
         
-        public List<BreakfastReservation> BreakfastDates;
+        public List<BreakfastReservation> BreakfastDates { get; set; }
     }
 }
