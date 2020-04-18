@@ -6,7 +6,7 @@ using System.Text;
 
 namespace I4GUI_Assigment_2.Data
 {
-    partial class MyDbContext : DbContext
+    public partial class MyDbContext : DbContext
     {
         public MyDbContext(DbContextOptions<MyDbContext> options)
             : base(options)
