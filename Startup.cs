@@ -29,7 +29,7 @@ namespace I4GUI_Assigment_2
         {
             services.AddDbContext<MyDbContext>(options =>
                 options.UseSqlServer(
-                    Configuration.GetConnectionString("Data Source=DESKTOP-53NSCCD;Initial Catalog=GUI2;Integrated Security=True")));
+                    Configuration.GetConnectionString("Data Source=127.0.0.1,1433;Database=I4GUI_aflv;User ID=SA;Password=SecurePassword1!;")));
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<MyDbContext>();
             services.AddControllersWithViews();
