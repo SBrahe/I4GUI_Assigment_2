@@ -57,7 +57,7 @@ namespace I4GUI_Assigment_2.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ReservationId,Date,NumberOfChildReservations,NumberOfAdultReservations,NumberOfChildrenCheckedIn,NumberOfAdultsCheckedIn,roomNumber")] BreakfastReservation breakfastReservation)
+        public async Task<IActionResult> Create([Bind("ReservationId,Date,NumberOfChildReservations,NumberOfAdultReservations,roomNumber")] BreakfastReservation breakfastReservation)
         {
             if (ModelState.IsValid)
             {
@@ -91,7 +91,7 @@ namespace I4GUI_Assigment_2.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ReservationId,Date,NumberOfChildReservations,NumberOfAdultReservations,NumberOfChildrenCheckedIn,NumberOfAdultsCheckedIn,roomNumber")] BreakfastReservation breakfastReservation)
+        public async Task<IActionResult> Edit(int id, [Bind("ReservationId,Date,NumberOfChildReservations,NumberOfAdultReservations,roomNumber")] BreakfastReservation breakfastReservation)
         {
             if (id != breakfastReservation.ReservationId)
             {
