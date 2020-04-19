@@ -31,6 +31,28 @@ namespace I4GUI_Assigment_2.Data
                 .HasOne<Room>(b => b.room)
                 .WithMany(r => r.BreakfastDates)
                 .HasForeignKey(b => b.roomNumber);
+
+            modelbuilder.Entity<Room>()
+                .HasData(
+                new Room { 
+                    RoomNumber = 101, 
+                    NumberOfAdults = 3, 
+                    NumberOfChildren = 4 },
+                
+            new Room
+            {
+                RoomNumber = 202,
+                NumberOfAdults = 1,
+                NumberOfChildren = 1
+            },
+
+            new Room
+            {
+                RoomNumber = 303,
+                NumberOfAdults = 2,
+                NumberOfChildren = 2
+            }
+            );
         }
     }
 }
